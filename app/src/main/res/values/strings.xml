@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">latest_instagram_cloning_1</string>
+    <string name="back4app_app_id">se7burTl2I77dFUUrYq4EZiXrgLoOt2bgTmAr2P8</string>
+    <string name="back4app_client_key">3CnNR09VDcB4JR6wICoT40voIwOwC9dsbhmMp5pG</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
