@@ -39,15 +39,19 @@ public class profileTab extends Fragment {
         View view=inflater.inflate(R.layout.fragment_profile_tab, container, false);
         profileName=view.findViewById(R.id.name);
         profession=view.findViewById(R.id.profession);
-        hobbies=view.findViewById(R.id.profession);
-        sports=view.findViewById(R.id.hobbies);
+        hobbies=view.findViewById(R.id.hobbies);
+        sports=view.findViewById(R.id.spports);
         bio=view.findViewById(R.id.bio);
         updateInfo=view.findViewById(R.id.updateInfo);
         final ParseUser parseUser=ParseUser.getCurrentUser();
 
+        showData(parseUser);
+
+
         updateInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
                 parseUser.put("profileName",profileName.getText().toString());
                 parseUser.put("userProfession",profession.getText().toString());
@@ -81,5 +85,45 @@ public class profileTab extends Fragment {
 
         return view;
 
+    }
+
+    public void showData(ParseUser parseUser)
+    {
+        if(parseUser.get("profileName")==null)
+        {
+            profileName.setText("");
+        }
+        else {
+            profileName.setText(parseUser.get("profileName") + "");
+        }
+        if(parseUser.get("userBio")==null)
+        {
+            bio.setText("");
+
+        }
+        else {
+            bio.setText(parseUser.get("userBio") + "");
+        }
+        if(parseUser.get("userProfession")==null)
+        {
+            profession.setText("");
+        }
+        else {
+            profession.setText(parseUser.get("userProfession") + "");
+        }
+        if(parseUser.get("userHobbies")==null)
+        {
+            hobbies.setText("");
+        }
+        else {
+            hobbies.setText(parseUser.get("userHobbies") + "");
+        }
+        if(parseUser.get("userSports")==null)
+        {
+            sports.setText("");
+        }
+        else {
+            sports.setText(parseUser.get("userSports") + "");
+        }
     }
 }
