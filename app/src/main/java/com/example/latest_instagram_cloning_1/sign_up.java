@@ -32,8 +32,8 @@ public class sign_up extends AppCompatActivity  implements View.OnClickListener{
 
         if(ParseUser.getCurrentUser()!=null )
         {
-            ParseUser.getCurrentUser().logOut();
-            //transferToSocialActivity();
+            //ParseUser.getCurrentUser().logOut();
+            transferToSocialActivity();
         }
 
 
@@ -114,6 +114,7 @@ public class sign_up extends AppCompatActivity  implements View.OnClickListener{
     {
         Intent intent=new Intent(sign_up.this,socialActivity.class);
         startActivity(intent);
+        finish();
     }
 
 

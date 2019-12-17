@@ -36,8 +36,8 @@ public class homePage extends AppCompatActivity implements View.OnClickListener 
 
         if(ParseUser.getCurrentUser()!=null)
         {
-            ParseUser.getCurrentUser().logOut();
-            //transferToSocialActivity();
+            //ParseUser.getCurrentUser().logOut();
+            transferToSocialActivity();
 
         }
 
@@ -121,5 +121,6 @@ public class homePage extends AppCompatActivity implements View.OnClickListener 
     {
         Intent intent=new Intent(homePage.this,socialActivity.class);
         startActivity(intent);
+        finish();
     }
 }
