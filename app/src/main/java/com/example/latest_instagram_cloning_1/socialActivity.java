@@ -45,7 +45,7 @@ public class socialActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_social);
 
-        setTitle("GPS PRESENCE SYSTEM");
+        setTitle("INSTAGRAM");
         //toolbar=findViewById(R.id.myToolBar);
         //setSupportActionBar(toolbar);
         tabLayout=findViewById(R.id.tabLayout);
