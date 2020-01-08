@@ -104,7 +104,7 @@ public class userTab extends Fragment implements AdapterView.OnItemClickListener
                     final PrettyDialog prettyDialog=new PrettyDialog(getContext());
                     prettyDialog.setTitle(user.getUsername()+"'s Info").setMessage(user.get("userProfession")+"\n"+
                             user.get("userHobbies")+"\n"+user.get("userSports")+"\n"+
-                            user.get("userBio")+"").setIcon(R.drawable.person).addButton("OK",
+                            user.get("userBio")+"").setIcon(R.drawable. person).addButton("OK",
                             R.color.pdlg_color_white,
                             R.color.colorPrimary,
                             new PrettyDialogCallback() {

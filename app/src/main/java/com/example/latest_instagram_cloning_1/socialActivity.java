@@ -40,6 +40,8 @@ public class socialActivity extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +58,9 @@ public class socialActivity extends AppCompatActivity {
         tabFragment=new TabFragment(getSupportFragmentManager());
         viewPager.setAdapter(tabFragment);
         tabLayout.setupWithViewPager(viewPager,false);
+
+
+
 
     }
 

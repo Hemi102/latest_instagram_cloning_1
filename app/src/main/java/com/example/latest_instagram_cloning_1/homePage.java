@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +18,7 @@ import com.shashank.sony.fancytoastlib.FancyToast;
 
 public class homePage extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView signupText;
+    private Button signupText;
     private Button loginButton;
 
     @Override
